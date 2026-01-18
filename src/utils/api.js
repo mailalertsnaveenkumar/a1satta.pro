@@ -1,8 +1,8 @@
 import axios from "axios";
 
 const api = axios.create({
-  // baseURL: "https://api.A1satta.pro/api",
-    baseURL: "http://localhost:9000/api",
+  baseURL: "https://api.A1satta.pro/api",
+    // baseURL: "http://localhost:9000/api",
 
 });
 api.interceptors.request.use((config) => {
@@ -14,5 +14,6 @@ api.interceptors.request.use((config) => {
 });
 
 export default api;
+
 
 
